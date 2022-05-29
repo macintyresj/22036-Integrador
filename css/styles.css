@@ -12,7 +12,10 @@ h6 {
 .img-carousel:hover {
   filter: blur(0.5rem);
 }
-
+.carousel-control-next,
+.carousel-control-prev {
+  height: 75%;
+}
 .btn.group {
   text-align: start;
 }
@@ -27,12 +30,22 @@ h6 {
   border: #93c921;
   color: whitesmoke;
 }
+button a {
+  color: whitesmoke;
+}
 footer.bg-gradiente {
   background: linear-gradient(
     45deg,
     rgb(21 39 54) 0%,
     rgb(34 62 87 / 75%) 100%
   );
+}
+footer a {
+  margin: auto;
+  width: 8rem;
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .carousel-caption {
@@ -45,4 +58,30 @@ footer.bg-gradiente {
     font-size: 0.8rem;
     text-shadow: 0 0 4px black;
   }
+}
+/*VENTA DE ENTRADAS*/
+section {
+  width: 70%;
+}
+.card-ticket {
+  border: 1px solid #c3dffe;
+  text-align: center;
+  min-height: 200px;
+  padding-top: 1.3rem;
+  line-height: 2.5;
+  /*cbe4fe*/
+}
+.border-orange {
+  border: 1px solid #f3cc58;
+}
+.card-ticket span,
+.card-ticket h5 {
+  font-weight: 650;
+}
+.card-ticket p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+#total {
+  background-color: #cbe4fe;
 }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Proyecto Integrador JS</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid mx-4">
+          <a class="navbar-brand" href="index.html"> Conf Bs As </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="mx-auto">
+      <div class="container-md mt-4 mx-auto row">
+        <div class="row row-cols-1 row-cols-md-3 g-2">
+          <div class="col">
+            <div class="card card-ticket">
+              <div class="card-body px-1">
+                <h5 class="card-title">Estudiantes</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Tienen un descuento
+                </h6>
+                <span>80%</span>
+                <p class="card-text">*Presentar documentación.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-ticket">
+              <div class="card-body px-1">
+                <h5 class="card-title">Trainee</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Tienen un descuento
+                </h6>
+                <span>50%</span>
+                <p class="card-text">*Presentar documentación.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-ticket border-orange">
+              <div class="card-body px-1">
+                <h5 class="card-title">Junior</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Tienen un descuento
+                </h6>
+                <span>15%</span>
+                <p class="card-text">*Presentar documentación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-md">
+        <h6 class="text-uppercase text-secondary fw-1">VENTA</h6>
+        <h3 class="text-uppercase fw-6 mx-auto">VALOR DE TICKET $200</h3>
+        <form class="container-md">
+          <div class="row">
+            <div class="mb-3 col-md-6 mr-md-1">
+              <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Nombre"
+              />
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3 col-md-6 ml-md-1">
+              <!-- <label for="surname" class="form-label">Apellido</label> -->
+              <input
+                type="text"
+                class="form-control"
+                id="surname"
+                placeholder="Apellido"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3">
+              <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Correo"
+              />
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-md-6 mr-md-1">
+              <label for="quantity" class="form-label">Cantidad</label>
+              <input
+                type="number"
+                class="form-control"
+                id="quantity"
+                placeholder="cantidad"
+              />
+            </div>
+            <div class="mb-3 col-md-6 ml-md-1">
+              <label for="category" class="form-label">Categoría</label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="category"
+              >
+                <option value="1">Estudiante</option>
+                <option value="2">Trainee</option>
+                <option value="3">Junior</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div class="mb-4 col-12 p-2" id="total">Total a Pagar: $</div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-sm-6">
+              <button type="submit" class="btn btn-verde w-100">Borrar</button>
+            </div>
+            <div class="mb-3 col-sm-6">
+              <button type="submit" class="btn btn-verde w-100" id="resumen">
+                Resumen
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!------------------------FOOTER------------->
+    <footer class="bg-gradiente mt-4 py-4 container-fluid">
+      <div
+        class="d-flex flex-sm-wrap flex-md-nowrap justify-content-between align-content-center"
+      >
+        <a href="#" class="text-wrap px-sm-2 px-lg-4">Preguntas frecuentes</a>
+
+        <a href="#" class="px-sm-2 px-lg-4">Contáctanos</a>
+
+        <a href="#" class="px-sm-2 px-lg-4">Prensa</a>
+
+        <a href="#" class="px-sm-2 px-lg-4">Conferencias</a>
+
+        <a href="#" class="text-wrap px-sm-2 px-lg-4">Términos y condiciones</a>
+
+        <a href="#" class="px-sm-2 px-lg-4">Publicidad</a>
+
+        <a href="#" class="px-sm-2 px-lg-4">Estudiantes</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- 
+
+Algunos editores online para ir probando sus scripts, quizas conozcan alguno del curso de desarrollo.
+https://codesandbox.io
+https://codepen.io
+https://jsbin.com
+
+Cuál sería la ventaja? 
+*Lo pueden usar desde cualquier compu sin tener VSC instalado. 
+*No es necesario crear archivos ni carpetas. 
+*Pueden ir viendo el resultado sin abrir el navegador y la consola
+*Los primeros 2 podrían guardar el documento.  
+
+Lo recomiendo para estas primeras clases para practicar.
+
+Acá la lista de operadores lógicos de JS
+
+
+Una clase con mucha info. Espero que no se sientan abrumados. Vamos a ir viendo de a poco todo el programa del curso.
+Si nunca vieron nada de algun lenguaje de programación algunos mensajes del chat seguro les parecieron chino. 
+Tengan la tranquilidad que solo les voy a pedir lo que solicita el desafío, si alguno quiere ir más allá también va a tener esa libertad y espero poder acompañarlos y sino le preguntamos al profe. -->

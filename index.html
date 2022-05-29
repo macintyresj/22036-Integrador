@@ -10,68 +10,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
-    <title>Document</title>
-    <style>
-      .navbar-brand {
-        font-size: 1rem;
-      }
-
-      h3,
-      h6 {
-        text-align: center;
-      }
-      .flex-end {
-        justify-content: end;
-      }
-      .img-carousel:hover {
-        filter: blur(0.5rem);
-      }
-
-      .btn.group {
-        text-align: start;
-      }
-
-      .honolulu {
-        background-image: url("https://i.ibb.co/2vYqPTW/honolulu.jpg");
-        background-size: cover;
-        /* background-position: left; */
-      }
-      .underDot {
-        border-bottom: 2px dotted;
-      }
-      .btn-verde {
-        background-color: #93c921;
-        border: #93c921;
-        color: whitesmoke;
-      }
-      footer.bg-gradiente {
-        background: linear-gradient(
-          45deg,
-          rgb(21 39 54) 0%,
-          rgb(34 62 87 / 75%) 100%
-        );
-      }
-      footer a {
-        margin: auto;
-        width: 8rem;
-        text-decoration: none;
-        color: aliceblue;
-        text-align: center;
-      }
-      @media (min-width: 768px) {
-        .carousel-caption {
-          text-align: end;
-          right: 7%;
-          left: 40%;
-          bottom: 1.5rem;
-        }
-        .carousel-caption p {
-          font-size: 0.8rem;
-          text-shadow: 0 0 4px black;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Proyecto Integrador</title>
   </head>
   <body>
     <header>
@@ -104,16 +44,18 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#oradores">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El lugar y la fecha</a>
+                <a class="nav-link" href="#donde">El lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link" href="#anotate">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-success" href="#">Comprar tickets</a>
+                <a class="nav-link text-success" href="tickets.html"
+                  >Comprar tickets</a
+                >
               </li>
             </ul>
           </div>
@@ -142,7 +84,9 @@
               <button class="btn btn-outline-light mx-2">
                 Quiero ser orador
               </button>
-              <button class="btn btn-success">Comprar tickets</button>
+              <a href="tickets.html">
+                <button class="btn btn-success">Comprar tickets</button>
+              </a>
             </div>
           </div>
           <div class="carousel-item">
@@ -167,7 +111,9 @@
               <button class="btn btn-outline-light mx-2">
                 Quiero ser orador
               </button>
-              <button class="btn btn-success">Comprar tickets</button>
+              <a href="tickets.html">
+                <button class="btn btn-success">Comprar tickets</button>
+              </a>
             </div>
           </div>
           <div class="carousel-item">
@@ -177,7 +123,7 @@
               class="d-block"
               style="width: 100%"
             />
-            <div class="carousel-caption">
+            <div class="carousel-caption z-index-1100">
               <h3 class="text-end">Conf Bs As</h3>
               <p>
                 Bs As llega por pimera vez a Argentina. Un evento para compartir
@@ -189,7 +135,9 @@
               <button class="btn btn-outline-light mx-2">
                 Quiero ser orador
               </button>
-              <button class="btn btn-success">Comprar tickets</button>
+              <a href="tickets.html">
+                <button class="btn btn-success">Comprar tickets</button>
+              </a>
             </div>
           </div>
         </div>
@@ -215,7 +163,7 @@
     </header>
     <!-- ---------------------SECCION ORADORES------------------------ -->
 
-    <div class="container-md">
+    <div class="container-md" id="oradores">
       <h6 class="text-uppercase text-secondary pt-3">Conocé a los</h6>
       <h3 class="text-uppercase fw-6">Oradores</h3>
       <div class="row row-cols-1 row-cols-md-3 g-3">
@@ -285,7 +233,7 @@
     </div>
     <!-- --------------------BS AS - OCTUBRE --------------------------->
     <div class="container-fluid mt-4">
-      <div class="row">
+      <div class="row" id="donde">
         <div class="col-md-6 px-0">
           <div class="honolulu h-100"></div>
         </div>
@@ -312,7 +260,7 @@
       </div>
     </div>
     <!-------------------------FORMULARIO--------------------------->
-    <div class="container-md">
+    <div class="container-md" id="anotate">
       <h6 class="text-uppercase text-secondary pt-3">Conviértete en un</h6>
       <h3 class="text-uppercase fw-6">Orador</h3>
       <p class="text-center">
